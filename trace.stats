@@ -1,0 +1,28 @@
+Cache Configuration
+
+   2 2-way set associative entries
+   of line size 8 bytes
+
+
+Results for Each Reference
+
+Access Address    Tag   Index Offset Result Memrefs
+------ -------- ------- ----- ------ ------ -------
+  read       58       5     1      0   miss       1
+  read       68       6     1      0   miss       1
+  read       58       5     1      0    hit       0
+  read       68       6     1      0    hit       0
+  read       40       4     0      0   miss       1
+  read        c       0     1      4   miss       1
+  read       40       4     0      0    hit       0
+  read       48       4     1      0   miss       1
+
+
+Simulation Summary Statistics
+-----------------------------
+Total hits       : 3
+Total misses     : 5
+Total accesses   : 8
+Hit ratio        : 0.375000
+Miss ratio       : 0.625000
+
